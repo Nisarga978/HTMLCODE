@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <style>
+            body{
+                
+              border: 1px solid black;
+              text-align: center;
+              width: 700px;
+              margin-top: 150px;
+              margin-bottom: 300px;
+              margin-right: 600px;
+              margin-left: 450px;
+              background-color:azure;
+             
+            }
+        </style>
+    </head>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+    <body>
+        <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+        <script>
+            var xValues = ["Electrical_Items", "Home_Decor", "Clothes", "Stationary_Items", "Foot_Ware"];
+            var yValues = [43, 49, 39, 24, 27];
+            var barColors = ["red", "green","blue","orange","brown"];
+            
+            new Chart("myChart", {
+              type: "bar",
+              data: {
+                labels: xValues,
+                datasets: [{
+                  backgroundColor: barColors,
+                  data: yValues
+                }]
+              },
+              options: {
+                legend: {display: false},
+                title: {
+                  display: true,
+                  text: "Overview Of Sales"
+                }
+              }
+            });
+            </script>
+        
+    </body>
+</html>
