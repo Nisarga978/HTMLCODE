@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Employee Registration Form</title>
+        <style>
+            body{
+                text-align: center;
+                background-color: lightblue;
+                border: 1px solid black;
+                width: 450px;
+                margin-top: 10px;
+                margin-bottom: 100px;
+                margin-right: 600px;
+                margin-left: 600px;
+                
+            }
+            .container{
+                text-align:left;
+                padding: 20px;
+            }
+            button{
+                padding:10px;
+                background-color:rgb(66, 2, 79) ;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+                color: aliceblue;
+
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Employee Registration Form</h1>
+        <h3>Fill out the form for register</h3>
+        <hr style="width: 90%;text-align:center: 0">
+        <div class="container">
+            <label >Employee Name</label><br>
+            <input type="text" placeholder="First">
+            <input type="text" placeholder="Last"><br><br>
+            <label>Employee Number</label><br>
+            <input type="text" placeholder="Emp-id"><br><br>
+            <label>Birth Date:</label>
+            <input type="date"><br><br>
+            <form action="/action_page.php">
+                <label for="Gender">Gender:</label>
+                <select id="Gender" name="Gender">
+                  <option value="male">male</option>
+                  <option value="female">female</option>
+                  <option value="others">others</option>
+                </select>
+            </form>
+            <label>E-mail address</label><br>
+            <input type="email" placeholder="E-mail"><br><br>
+            <label>Phone Number</label><br>
+            <input type="text"><br><br>
+            <label>Company Name</label><br>
+            <input type="text"><br><br>
+            
+            <button>Submit Application</button>
+        </div>
+        
+         
+
+    </body>
+</html>
